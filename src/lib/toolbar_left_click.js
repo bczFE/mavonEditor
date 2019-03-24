@@ -70,8 +70,8 @@ export const toolbar_left_click = (_type, $vm) => {
              str: $vm.d_words.tl_bold
          },
          'italic': {
-             prefix: '*',
-             subfix: '*',
+             prefix: '_',
+             subfix: '_',
              str: $vm.d_words.tl_italic
          },
          'header': {
