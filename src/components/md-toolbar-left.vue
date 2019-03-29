@@ -110,12 +110,9 @@
         <button type="button" v-if="toolbars.save" @click="$clicks('save')" class="op-icon fa fa-mavon-floppy-o"
                 aria-hidden="true"
                 :title="`${d_words.tl_save} (ctrl+s)`"></button>
-<<<<<<< HEAD
         <button type="button" v-if="toolbars.save" @click="$startModal()" class="op-icon iframeMarker"
                 aria-hidden="true"
                 title="添加iframe"></button>
-=======
->>>>>>> 8c2f9218ba600b30914bef5d07a61ce9f061077c
         <slot name="left-toolbar-after" />
 
         <!-- 添加image链接 -->
@@ -313,12 +310,9 @@
                 this.$emit('toolbar_left_click', _type);
                 this.s_header_dropdown_open = false
             },
-<<<<<<< HEAD
             $startModal () {
                 this.$emit('start_iframe_modal');
             },  
-=======
->>>>>>> 8c2f9218ba600b30914bef5d07a61ce9f061077c
             handleClose(e) {
                 this.s_img_dropdown_open = false;
             }
@@ -471,7 +465,6 @@
             color #bcbcbc
             &:hover
                 color #000
-<<<<<<< HEAD
 .iframeMarker
     background url(../lib/iframe.svg) !important
     background-repeat: no-repeat !important
@@ -479,7 +472,5 @@
     background-position: center !important
 .iframeMarker:hover
     background-color: #e5e5e5 !important
-=======
->>>>>>> 8c2f9218ba600b30914bef5d07a61ce9f061077c
 
 </style>
