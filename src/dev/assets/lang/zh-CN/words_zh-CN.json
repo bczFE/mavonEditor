@@ -26,7 +26,10 @@
   "tl_redo": "下一步",
   "tl_trash": "清空",
   "tl_save": "保存",
+<<<<<<< HEAD
   "tl_iframe": "添加iframe标签",
+=======
+>>>>>>> 8c2f9218ba600b30914bef5d07a61ce9f061077c
   "tl_navigation_on": "开启标题导航",
   "tl_navigation_off": "关闭标题导航",
   "tl_preview": "预览",

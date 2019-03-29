@@ -26,7 +26,10 @@
   "tl_redo": "Redo",
   "tl_trash": "Trash",
   "tl_save": "Save",
+<<<<<<< HEAD
   "tl_iframe": "add iframe",
+=======
+>>>>>>> 8c2f9218ba600b30914bef5d07a61ce9f061077c
   "tl_navigation_on": "Navigation ON",
   "tl_navigation_off": "Navigation OFF",
   "tl_preview": "Preview",

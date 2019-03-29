@@ -4,7 +4,11 @@
         <div class="v-note-op" v-show="toolbarsFlag" :class="{'shadow': boxShadow}">
             <v-md-toolbar-left ref="toolbar_left" :editable="editable" :d_words="d_words"
                                @toolbar_left_click="toolbar_left_click" @toolbar_left_addlink="toolbar_left_addlink" :toolbars="toolbars"
+<<<<<<< HEAD
                                @imgAdd="$imgAdd" @imgDel="$imgDel" @imgTouch="$imgTouch" :image_filter="imageFilter" @start_iframe_modal="start_iframe_modal">
+=======
+                               @imgAdd="$imgAdd" @imgDel="$imgDel" @imgTouch="$imgTouch" :image_filter="imageFilter">
+>>>>>>> 8c2f9218ba600b30914bef5d07a61ce9f061077c
                 <slot name="left-toolbar-before" slot="left-toolbar-before" />
                 <slot name="left-toolbar-after" slot="left-toolbar-after" />
             </v-md-toolbar-left>
@@ -79,8 +83,11 @@
             <div ref="vNoteReadContent" class="v-note-read-content" v-html="d_render">
             </div>
         </div>
+<<<<<<< HEAD
         <!--iframe modal-->
         <iframe-modal ref="iframeModal" @iframeAdd="iframeAdd"></iframe-modal>
+=======
+>>>>>>> 8c2f9218ba600b30914bef5d07a61ce9f061077c
     </div>
 </template>
 
@@ -90,7 +97,10 @@ import {autoTextarea} from 'auto-textarea'
 import {keydownListen} from './lib/core/keydown-listen.js'
 import hljsCss from './lib/core/hljs/lang.hljs.css.js'
 import hljsLangs from './lib/core/hljs/lang.hljs.js'
+<<<<<<< HEAD
 import iframeModal from './components/iframeModal.vue'
+=======
+>>>>>>> 8c2f9218ba600b30914bef5d07a61ce9f061077c
 import {
     fullscreenchange,
    /* windowResize, */
@@ -628,6 +638,7 @@ export default {
         $emptyHistory() {
             this.d_history = [this.d_value] // 编辑记录
             this.d_history_index = 0 // 编辑记录索引
+<<<<<<< HEAD
         },
         //开启ifream编辑框
         start_iframe_modal () {
@@ -635,6 +646,8 @@ export default {
         },
         iframeAdd (data) {
             this.$emit('iframeAdd', data)
+=======
+>>>>>>> 8c2f9218ba600b30914bef5d07a61ce9f061077c
         }
     },
     watch: {
@@ -676,8 +689,12 @@ export default {
     components: {
         'v-autoTextarea': autoTextarea,
         'v-md-toolbar-left': md_toolbar_left,
+<<<<<<< HEAD
         'v-md-toolbar-right': md_toolbar_right,
         'iframe-modal': iframeModal
+=======
+        'v-md-toolbar-right': md_toolbar_right
+>>>>>>> 8c2f9218ba600b30914bef5d07a61ce9f061077c
     }
 };
 </script>
