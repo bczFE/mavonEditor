@@ -465,7 +465,7 @@
             &:hover
                 color #000
 .iframeMarker
-    background url(../lib/iframe.png) !important
+    background url(https://ali.baicizhan.com/readin/images/book_wiki/img_1554135131_464461480) !important
     background-repeat: no-repeat !important
     background-size: 50% 50% !important
     background-position: center !important

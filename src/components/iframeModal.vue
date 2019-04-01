@@ -53,6 +53,7 @@ export default {
       transform: translate(-50%, -50%);
       background: #f5f5f5;
       padding: 20px;
+      z-index: 100;
   }
   .close {
     position: absolute;
