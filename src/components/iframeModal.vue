@@ -1,15 +1,15 @@
 <template>
   <div v-if="showModal" class="iframeModal">
-    <img src="../lib/close.png" class="close" @click="closeModal">
-    <div class="container">
+    <img src="https://ali.baicizhan.com/readin/images/book_wiki/img_1554134595_818459816" class="close" @click="closeModal">
+    <div class="iframeContainer">
       <span>url:</span>
       <input type="text" v-model="iframeData.src">
     </div>
-    <div class="container">
+    <div class="iframeContainer">
       <span>宽度:</span>
       <input type="text"  v-model="iframeData.width">
     </div>
-    <div class="container">
+    <div class="iframeContainer">
       <span>高度:</span>
       <input type="text"  v-model="iframeData.height">
     </div>
@@ -46,8 +46,8 @@ export default {
 <style scoped>
   .iframeModal {
       position: absolute;
-      width: 50%;
-      height: 50%;
+      width: 30%;
+      height: 200px;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -63,9 +63,10 @@ export default {
     background-color: transparent;
     cursor: pointer;
   }
-  .container{
+  .iframContainer{
     width: 80%;
-    margin: 20px auto;
+    height: 30px;
+    margin: 1% auto;
   }
   .button{
     width: 60px;
