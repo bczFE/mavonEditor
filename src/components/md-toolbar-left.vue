@@ -466,7 +466,7 @@
             &:hover
                 color #000
 .iframeMarker
-    background url(../lib/iframe.svg) !important
+    background url(../lib/iframe.png) !important
     background-repeat: no-repeat !important
     background-size: 50% 50% !important
     background-position: center !important
