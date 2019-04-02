@@ -45,8 +45,8 @@ export default {
 </script>
 <style scoped>
   .iframeModal {
-      position: absolute;
-      width: 30%;
+      position: fixed;
+      width: 350px;
       height: 200px;
       top: 50%;
       left: 50%;
