@@ -70,8 +70,8 @@ export const toolbar_left_click = (_type, $vm) => {
              str: $vm.d_words.tl_bold
          },
          'italic': {
-             prefix: '!!',
-             subfix: '!!',
+             prefix: '*',
+             subfix: '*',
              str: $vm.d_words.tl_italic
          },
          'header': {
@@ -110,8 +110,8 @@ export const toolbar_left_click = (_type, $vm) => {
              str: $vm.d_words.tl_header_six
          },
          'underline': {
-             prefix: '_',
-             subfix: '_',
+             prefix: '!!',
+             subfix: '!!',
              str: $vm.d_words.tl_underline
          },
          'strikethrough': {
