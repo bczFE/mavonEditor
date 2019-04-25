@@ -53,9 +53,9 @@ markdown.renderer.rules.link_open = function (tokens, idx, options, env, self) {
     // pass token to default renderer.
     return defaultRender(tokens, idx, options, env, self);
 };
-var mihe = require('markdown-it-highlightjs-external');
+// var mihe = require('markdown-it-highlightjs-external');
 // math katex
-var katex = require('markdown-it-katex-external');
+// var katex = require('markdown-it-katex-external');
 var miip = require('markdown-it-images-preview');
 var missLangs = {};
 var needLangs = [];
@@ -69,23 +69,22 @@ var hljs_opts = {
         }
     }
 };
-markdown.use(mihe, hljs_opts)
-    .use(emoji)
+markdown
+    // .use(emoji)
     .use(sup)
     .use(sub)
     .use(container)
     .use(container, 'hljs-left') /* align left */
     .use(container, 'hljs-center')/* align center */
     .use(container, 'hljs-right')/* align right */
-    .use(deflist)
-    .use(abbr)
-    .use(footnote)
+    // .use(deflist)
+    // .use(abbr)
+    // .use(footnote)
     .use(insert)
     .use(mark)
     .use(container)
     .use(miip)
-    .use(katex)
-    .use(taskLists)
+    // .use(taskLists)
     .use(toc)
 
 export default {

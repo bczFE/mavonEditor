@@ -196,7 +196,7 @@ export default {
         },
         externalLink: {
             type: [Object, Boolean],
-            default: true
+            default: false
         },
         imageFilter: {
             type: Function,
