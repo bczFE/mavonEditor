@@ -9,7 +9,8 @@ var markdown_config = {
     langPrefix: 'lang-',  // CSS language prefix for fenced blocks. Can be
     linkify: false,        // 自动识别url
     typographer: true,
-    quotes: '“”‘’'
+    quotes: '“”‘’',
+    highlight: function () { return ''; }
 }
 var markdown = require('markdown-it')(markdown_config);
 // 表情

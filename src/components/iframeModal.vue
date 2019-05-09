@@ -1,18 +1,7 @@
 <template>
   <div v-if="showModal" class="iframeModal">
     <img src="https://ali.baicizhan.com/readin/images/book_wiki/img_1554134595_818459816" class="close" @click="closeModal">
-    <div class="iframeContainer">
-      <span>url:</span>
-      <input type="text" v-model="iframeData.src">
-    </div>
-    <div class="iframeContainer">
-      <span>宽度:</span>
-      <input type="text"  v-model="iframeData.width">
-    </div>
-    <div class="iframeContainer">
-      <span>高度:</span>
-      <input type="text"  v-model="iframeData.height">
-    </div>
+    <textarea class="iframeContainer" v-model="iframeData"></textarea>
     <div class="button" @click="commit">确定</div>
   </div>
 </template>
@@ -22,11 +11,7 @@ export default {
   data () {
     return {
       showModal: false,
-      iframeData: {
-        src: '',
-        width: '',
-        height: ''
-      }
+      iframeData: ''
     }
   },
   methods: {
@@ -52,7 +37,7 @@ export default {
       left: 50%;
       transform: translate(-50%, -50%);
       background: #f5f5f5;
-      padding: 20px;
+      padding: 50px;
       z-index: 100;
   }
   .close {
@@ -64,10 +49,10 @@ export default {
     background-color: transparent;
     cursor: pointer;
   }
-  .iframContainer{
-    width: 80%;
-    height: 30px;
-    margin: 1% auto;
+  .iframeContainer{
+    width: 100%;
+    height: 100px;
+    padding: 5px;
   }
   .button{
     width: 60px;

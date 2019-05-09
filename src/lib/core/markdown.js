@@ -23,12 +23,12 @@ var markdown_config = {
     linkify: false,        // 自动识别url
     typographer: true,
     quotes: '“”‘’',
-    highlight: function (str, lang) {
+    /* highlight: function (str, lang) {
         if (lang && hljsLangs[lang]) {
             return '<pre><div class="hljs"><code class="' + lang + '">' + markdown.utils.escapeHtml(str) + '</code></div></pre>';
         }
         return '<pre><code class="' + lang + '">' + markdown.utils.escapeHtml(str) + '</code></pre>';
-    }
+    } */
 }
 var markdown = require('markdown-it')(markdown_config);
 // 表情
