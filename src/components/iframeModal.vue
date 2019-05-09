@@ -59,7 +59,6 @@ export default {
     height: 30px;
     border-radius: 5px;
     background: #fff;
-    margin: 30px auto;
     line-height: 30px;
     text-align: center;
     cursor: pointer;
