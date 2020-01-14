@@ -304,9 +304,10 @@ export const scrollLink = ($event, $vm) => {
     }
     $vm.edit_scroll_height = element.scrollHeight
     // end ----
-    if ($vm.$refs.vShowContent.scrollHeight > $vm.$refs.vShowContent.offsetHeight) {
-        $vm.$refs.vShowContent.scrollTop = ($vm.$refs.vShowContent.scrollHeight - $vm.$refs.vShowContent.offsetHeight) * ratio
-    }
+    // 2020-01-14 去掉滚动条联动
+    // if ($vm.$refs.vShowContent.scrollHeight > $vm.$refs.vShowContent.offsetHeight) {
+    //     $vm.$refs.vShowContent.scrollTop = ($vm.$refs.vShowContent.scrollHeight - $vm.$refs.vShowContent.offsetHeight) * ratio
+    // }
 }
 /**
  * 监听浏览器fullscreen
